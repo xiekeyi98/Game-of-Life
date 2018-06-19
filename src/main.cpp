@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include "Game.h"
+#include "GameEngine.h"
 
 int main(int argc, char **argv) {
     uint32_t w = 40, h = 30;
@@ -18,7 +18,7 @@ int main(int argc, char **argv) {
                 break;
         }
     }
-    Game game(w, h);
+    GameEngine game;
     game.run();
     return 0;
 }

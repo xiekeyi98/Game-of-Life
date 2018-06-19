@@ -4,7 +4,7 @@
 #include <cstdint>
 #include <cassert>
 #include <vector>
-#include <SFML/System/Clock.hpp>
+#include <SFML/System.hpp>
 
 #include "Cell.h"
 
@@ -24,6 +24,10 @@ public:
 
     uint32_t getHeight() const {
         return height;
+    }
+
+    Vector2u getSize() const {
+        return {width, height};
     }
 
     Cell getCell(uint32_t x, uint32_t y) {
